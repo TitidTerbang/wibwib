@@ -116,7 +116,7 @@ h1 i {
 
 @media (max-width: 500px) {
     .container {
-        width: 95%; /* Lebar container sedikit lebih kecil */
+        width: 80%; /* Lebar container sedikit lebih kecil */
         max-width: none;
         border-radius: 0;
         margin: 10px auto; /* Margin atas-bawah lebih kecil */
