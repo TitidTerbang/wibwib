@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* Efek blur */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 i {
+    margin-right: 10px;
+}
+
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#newItemInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border putih transparan */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+#addButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px 0 0 5px; /* Hanya border radius di kiri */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 0; /* Hapus margin kiri */
+}
+
+#addButton:hover {
+    background-color: #45a049;
+}
+
+#listItems {
+    list-style: none;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+
+#listItems li {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#listItems li button {
+    margin-left: auto; /* Tombol ke kanan */
+    background: none; /* Tanpa background */
+    border: none;
+    color: #fff;
+    font-size: 1.1rem; /* Ukuran font lebih besar */
+    cursor: pointer;
+    transition: transform 0.2s; /* Efek transisi */
+}
+
+
+#listItems li button:hover {
+    transform: scale(1.1);
+}
+
+
+.edit-input {
+    /* Style input saat mengedit */
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px; /* Jarak dengan tombol simpan */
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 95%; /* Lebar container sedikit lebih kecil */
+        max-width: none;
+        border-radius: 0;
+        margin: 10px auto; /* Margin atas-bawah lebih kecil */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-area {
+        flex-direction: column; /* Input dan tombol ditumpuk */
+    }
+
+    #newItemInput, #addButton {
+        width: 100%; /* Input dan tombol memenuhi lebar */
+        margin-left: 0;
+        margin-bottom: 10px;
+        border-radius: 5px;  /* Border radius konsisten di semua sisi tombol dan input */
+
+    }
+
+    #listItems li {
+        font-size: 0.9rem;
+        padding: 10px 12px; /* Padding lebih kecil */
+    }
+    #listItems li button {
+        font-size: 1rem;
+    }
+}
