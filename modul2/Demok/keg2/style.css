@@ -19,7 +19,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px); /* Efek blur */
+    backdrop-filter: blur(8px);
 }
 
 .header {
@@ -49,7 +49,7 @@ h1 i {
 #newItemInput {
     flex-grow: 1;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Border putih transparan */
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
@@ -60,10 +60,10 @@ h1 i {
     background-color: #4CAF50;
     color: #fff;
     border: none;
-    border-radius: 5px 0 0 5px; /* Hanya border radius di kiri */
+    border-radius: 5px 0 0 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 0; /* Hapus margin kiri */
+    margin-left: 0;
 }
 
 #addButton:hover {
@@ -90,13 +90,13 @@ h1 i {
 
 
 #listItems li button {
-    margin-left: auto; /* Tombol ke kanan */
-    background: none; /* Tanpa background */
+    margin-left: auto;
+    background: none;
     border: none;
     color: #fff;
-    font-size: 1.1rem; /* Ukuran font lebih besar */
+    font-size: 1.1rem;
     cursor: pointer;
-    transition: transform 0.2s; /* Efek transisi */
+    transition: transform 0.2s;
 }
 
 
@@ -106,20 +106,19 @@ h1 i {
 
 
 .edit-input {
-    /* Style input saat mengedit */
     flex-grow: 1;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-right: 5px; /* Jarak dengan tombol simpan */
+    margin-right: 5px;
 }
 
 @media (max-width: 500px) {
     .container {
-        width: 80%; /* Lebar container sedikit lebih kecil */
+        width: 80%;
         max-width: none;
         border-radius: 0;
-        margin: 10px auto; /* Margin atas-bawah lebih kecil */
+        margin: 10px auto;
     }
 
     h1 {
@@ -127,20 +126,20 @@ h1 i {
     }
 
     .input-area {
-        flex-direction: column; /* Input dan tombol ditumpuk */
+        flex-direction: column;
     }
 
     #newItemInput, #addButton {
-        width: 100%; /* Input dan tombol memenuhi lebar */
+        width: 95%;
         margin-left: 0;
         margin-bottom: 10px;
-        border-radius: 5px;  /* Border radius konsisten di semua sisi tombol dan input */
+        border-radius: 5px;
 
     }
 
     #listItems li {
         font-size: 0.9rem;
-        padding: 10px 12px; /* Padding lebih kecil */
+        padding: 10px 12px;
     }
     #listItems li button {
         font-size: 1rem;

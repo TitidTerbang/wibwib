@@ -1,16 +1,16 @@
 let display = document.getElementById('display');
 
-function appendToDisplay(value) {
+function angkaDisp(value) {
     display.value += value;
 }
 
 
-function operate(operator) {
+function operator(operator) {
     display.value += operator;
 }
 
 
-function calculate() {
+function hasil() {
     try {
         display.value = eval(display.value);
     } catch (error) {
