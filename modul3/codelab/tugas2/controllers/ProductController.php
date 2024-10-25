@@ -2,10 +2,12 @@
 
 namespace Controller;
 
-include "../traits/ResponseFormatter.php";
 include "Controller.php";
 
-use Traits\ResponseFormatter;
+require_once __DIR__ . '/../traits/ResponseFormatter.php';
+require_once __DIR__ . '/Controller.php';
+
+use traits\ResponseFormatter;
 
 class ProductController extends Controller{
     use ResponseFormatter;
