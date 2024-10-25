@@ -14,7 +14,7 @@ function addNewItem() {
         `;
 
         listItems.appendChild(newListItem);
-        newItemInput.value = ""; // Clear input field
+        newItemInput.value = "";
     }
 }
 
