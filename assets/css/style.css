@@ -131,6 +131,51 @@ td {
     background: #c0392b;
 }
 
+/* Navbar Styles */
+.navbar {
+    background: var(--primary);
+    padding: 15px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--secondary);
+}
+
+/* Footer Styles */
+.footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
